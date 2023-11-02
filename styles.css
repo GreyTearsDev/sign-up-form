@@ -360,9 +360,11 @@ template {
   --invalid-field-color: #c92432;
   --invalid-field-background: #fffafa;
   --valid-field-color: #60bf81;
+  --valid-field-background: #f8fffb;
   --form-background-color: #fff;
   --form-accent-color: #f8f7f7;
   --form-border-color: #d8d8d8;
+  --field-suggestion-bg-color: #ecbf4c;
 }
 
 * {
@@ -453,6 +455,8 @@ input:focus:invalid {
 
 input:focus:valid {
   border-color: var(--valid-field-color);
+  color: var(--valid-field-color);
+  background-color: var(--valid-field-background);
 }
 
 input:required:valid + span::before {
@@ -497,9 +501,6 @@ button {
 
 button:hover {
   background-color: var(--button-hover-color);
-}
-
-button:active {
 }
 
 form {
