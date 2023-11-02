@@ -364,7 +364,6 @@ template {
   --form-background-color: #fff;
   --form-accent-color: #f8f7f7;
   --form-border-color: #d8d8d8;
-  --field-suggestion-bg-color: #ecbf4c;
 }
 
 * {
@@ -529,9 +528,10 @@ a:hover {
 
 .title-text {
   padding: 0 8vw 0 4vw;
-  margin-bottom: 8vh;
-  margin-top: -15vh;
-  font-size: large;
+  font-size: 1.5em;
+  position: absolute;
+  top: 1.5vh;
+  left: -0.4vw;
 }
 
 #logo {
