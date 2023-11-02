@@ -3,7 +3,6 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="./script.js"></script>
     <link rel="stylesheet" href="styles.css" />
     <!--Import Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -44,11 +43,8 @@
                   type="text"
                   name="first-name"
                   id="first-name"
-                  maxlength="50"
                   class="input-field"
                   placeholder="Required *"
-                  pattern="^[a-zA-Z]"
-                  minlength="1"
                   maxlength="30"
                   required
                 />
@@ -60,11 +56,8 @@
                   type="text"
                   name="last-name"
                   id="last-name"
-                  maxlength="50"
                   class="input-field"
                   placeholder="Required *"
-                  pattern="^[a-zA-Z]"
-                  minlength="1"
                   maxlength="30"
                   required
                 />
@@ -88,8 +81,8 @@
                   type="tel"
                   name="phone-number"
                   id="phone"
-                  pattern="^\+?(244)\d{9}$
-                  "
+                  min="9"
+                  max="13"
                 />
                 <span></span>
               </div>
@@ -109,9 +102,7 @@
                 <span></span>
               </div>
               <div>
-                <label for="pwd-confirm" data-error="The passwords don't match."
-                  >CONFIRM PASSWORD</label
-                >
+                <label for="pwd-confirm">CONFIRM PASSWORD</label>
                 <input
                   type="password"
                   name="pwd-confirm"
@@ -120,7 +111,7 @@
                   placeholder="Required *"
                   required
                 />
-                <span></span>
+                <span id="pwd-confirm-message"></span>
               </div>
               <!-- Submit -->
               <div class="create-account-btn">
@@ -133,4 +124,5 @@
       </div>
     </div>
   </body>
+  <script src="./script.js"></script>
 </html>

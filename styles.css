@@ -357,8 +357,9 @@ template {
   --text-color: #0d0d0d;
   --button-color: #91d9d9;
   --button-hover-color: #7bccd2;
-  --invalid-field-color: #f52447;
-  --valid-field-color: #24f54b;
+  --invalid-field-color: #c92432;
+  --invalid-field-background: #fffafa;
+  --valid-field-color: #60bf81;
   --form-background-color: #fff;
   --form-accent-color: #f8f7f7;
   --form-border-color: #d8d8d8;
@@ -446,16 +447,31 @@ input:focus {
 
 input:focus:invalid {
   border-color: var(--invalid-field-color);
+  color: var(--invalid-field-color);
+  background-color: var(--invalid-field-background);
 }
 
 input:focus:valid {
   border-color: var(--valid-field-color);
 }
 
+input:required:valid + span::before {
+  content: "✓";
+  color: var(--valid-field-color);
+}
+
 input:required::placeholder {
   font-size: 0.8em;
   opacity: 0.6;
   font-style: italic;
+}
+
+input::-webkit-contacts-auto-fill-button {
+  visibility: hidden;
+  display: none !important;
+  pointer-events: none;
+  position: absolute;
+  right: 0;
 }
 
 button {
@@ -481,6 +497,9 @@ button {
 
 button:hover {
   background-color: var(--button-hover-color);
+}
+
+button:active {
 }
 
 form {
