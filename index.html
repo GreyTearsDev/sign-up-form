@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="./script.js"></script>
+    <link rel="stylesheet" href="styles.css" />
+    <!--Import Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,300;0,400;0,600;0,900;1,300;1,400;1,600;1,900&family=Young+Serif&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="main-container">
+      <div class="image-container">
+        <h1 id="logo">BAZA</h1>
+        <img src="./images/philip-oroni-unsplash.jpeg" alt="" />
+        <!-- <div class="image-backdrop"><h3>KAZUKUTA</h3></div> -->
+      </div>
+
+      <div class="form-main-container">
+        <div class="title-text">
+          <h1>Get Started!</h1>
+        </div>
+        <div class="form">
+          <form action="#" method="post">
+            <fieldset>
+              <!--Name -->
+              <div>
+                <label for="first-name">FIRST NAME</label>
+                <input
+                  type="text"
+                  name="first-name"
+                  id="first-name"
+                  maxlength="50"
+                  class="input-field"
+                  placeholder="Required *"
+                  pattern="^[a-zA-Z]"
+                  minlength="1"
+                  maxlength="30"
+                  required
+                />
+                <span></span>
+              </div>
+              <div>
+                <label for="last-name">LAST NAME</label>
+                <input
+                  type="text"
+                  name="last-name"
+                  id="last-name"
+                  maxlength="50"
+                  class="input-field"
+                  placeholder="Required *"
+                  pattern="^[a-zA-Z]"
+                  minlength="1"
+                  maxlength="30"
+                  required
+                />
+                <span></span>
+              </div>
+              <!-- Contact Info -->
+              <div>
+                <label for="email">EMAIL</label>
+                <input
+                  type="email"
+                  name="email"
+                  id="email"
+                  placeholder="Required *"
+                  required
+                />
+                <span></span>
+              </div>
+              <div>
+                <label for="phone">PHONE NUMBER</label>
+                <input
+                  type="tel"
+                  name="phone-number"
+                  id="phone"
+                  pattern="^\+?(244)\d{9}$
+                  "
+                />
+                <span></span>
+              </div>
+              <!-- Password -->
+              <div>
+                <label for="pwd">PASSWORD</label>
+                <input
+                  type="password"
+                  name="pwd"
+                  id="pwd"
+                  class="error"
+                  placeholder="Required *"
+                  minlength="6"
+                  maxlength="20"
+                  required
+                />
+                <span></span>
+              </div>
+              <div>
+                <label for="pwd-confirm" data-error="The passwords don't match."
+                  >CONFIRM PASSWORD</label
+                >
+                <input
+                  type="password"
+                  name="pwd-confirm"
+                  id="pwd-confirm"
+                  class="error"
+                  placeholder="Required *"
+                  required
+                />
+                <span></span>
+              </div>
+              <!-- Submit -->
+              <div class="create-account-btn">
+                <button type="submit">Create Account</button>
+              </div>
+            </fieldset>
+            <p id="log-in">Already have an account? <a href="#">Log in</a></p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
