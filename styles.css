@@ -417,7 +417,7 @@ fieldset {
   padding: 4vw;
   position: relative;
   transform: translateY(-20%);
-  box-shadow: 3px 5px 10px rgb(195, 195, 195);
+  box-shadow: 3px 5px 10px rgba(213, 212, 212, 0.385);
 }
 
 fieldset > div {
@@ -530,7 +530,7 @@ a:hover {
   padding: 0 8vw 0 4vw;
   font-size: 1.5em;
   position: absolute;
-  top: 1.5vh;
+  top: 0.5vw;
   left: -0.4vw;
 }
 
