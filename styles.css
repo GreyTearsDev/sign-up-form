@@ -523,3 +523,16 @@ a:hover {
   text-shadow: 1px 1px 5px rgba(60, 60, 60, 0.426);
   letter-spacing: 0.4ch;
 }
+
+#credits {
+  position: absolute;
+  bottom: 10px;
+  color: var(--form-background-color);
+  font-weight: bold;
+  left: 5px;
+  font-size: 0.7rem;
+}
+
+#credits > a {
+  color: #0d0d0d;
+}
